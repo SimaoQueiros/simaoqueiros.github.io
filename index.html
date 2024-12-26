@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f5ed;
+            color: #4f4f4f;
+            margin: 0;
+            padding: 20px;
+        }
+        .menu {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #4f4f4f;
+            text-align: center;
+        }
+        .category {
+            margin: 20px 0;
+        }
+        .category h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .item:last-child {
+            border-bottom: none;
+        }
+        .description {
+            color: #757575;
+            font-size: 0.9em;
+        }
+        body{
+            background-image: url('pattern.jpg');
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(242, 237, 217, 0.9); /* Adjust opacity here */
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h1>Menu</h1>
+
+        <div class="category">
+            <h2>Cocktails</h2>
+            <div class="item">
+                <div>
+                    <strong>Aperol Spritz</strong>
+                    <div class="description">Aperol / Espumante / Agua com gas</div>
+                </div>
+                <div>€6,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Caipirinha</strong>
+                    <div class="description">6cl Cachaça / 3cl Lima / 15ml xarope de açucar </div>
+                </div>
+                <div>€5,50 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Daiquiri</strong>
+                    <div class="description">6cl rum / 2cl lima / 15ml xarope de açucar</div>
+                </div>
+                <div>€6,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Dry Martini</strong>
+                    <div class="description">6cl vodka / 1cl vermute</div>
+                </div>
+                <div>€6,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Expresso Martini</strong>
+                    <div class="description">2cl licor de cafe / 5cl vodka / cafe</div>
+                </div>
+                <div>€6,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Long Island</strong>
+                    <div class="description">1cl rum / 1cl vodka / 1cl gin / 1cl tequila / 1cl triple sec / 2,25cl limão / cola</div>
+                </div>
+                <div>€7,00 </div>
+            </div>
+            
+            <div class="item">
+                <div>
+                    <strong>Mojito</strong>
+                    <div class="description">6cl rum / 3cl lima / Água com gás</div>
+                </div>
+                <div>€6,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Pina Colada</strong>
+                    <div class="description">9cl Sumo Ananás / 2cl batida de coco / 6cl rum</div>
+                </div>
+                <div>€6,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Margaita</strong>
+                    <div class="description">6cl tequila / 2cl lima / 1,5cl triple sec</div>
+                </div>
+                <div>€6,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Moscow Mule</strong>
+                    <div class="description">6cl Vodka / 2cl lima / 12cl ginger beer</div>
+                </div>
+                <div>€6,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Negroni</strong>
+                    <div class="description">2,5cl campari / 2,5cl gin / 2,5cl vermute</div>
+                </div>
+                <div>€6,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Whisky Sour</strong>
+                    <div class="description">6cl whisky / 2cl limão / 1,5cl xarope de açucar</div>
+                </div>
+                <div>€6,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>White lady</strong>
+                    <div class="description">6cl gin / 2cl triple sec / 2cl limão / 1cl xarope de açucar</div>
+                </div>
+                <div>€6,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Pornstar martini</strong>
+                    <div class="description">3,5cl vodka / 3,5cl passoa / 2cl xarope de baunilha /2cl maracuja / 2cl limão</div>
+                </div>
+                <div>€6,00 </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>Cervejas</h2>
+            <div class="item">
+                <div>
+                    <strong>Fino Super Bock </strong>
+                    <div class="description">20cl</div>
+                </div>
+                <div>€1,30</div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Fino Super Bock</strong>
+                    <div class="description">35cl</div>
+                </div>
+                <div>€2,20</div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Fino Stout</strong>
+                    <div class="description">25cl</div>
+                </div>
+                <div>€1,50</div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Somersby Maça</strong>
+                    <div class="description">30cl</div>
+                </div>
+                <div>€2,50</div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Tango</strong>
+                    <div class="description">20cl / com groselha</div>
+                </div>
+                <div>€1,50 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Disel</strong>
+                    <div class="description">20cl / com coca-cola</div>
+                </div>
+                <div>€1,50 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Calsberg</strong>
+                    <div class="description">25cl</div>
+                </div>
+                <div>€1,30 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Sangria Maracujá / Frutos Vermelhos</strong>
+                    <div class="description">jarro de 1,5 Litros</div>
+                </div>
+                <div>€16,00 </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>Refrigerantes</h2>
+            <div class="item">
+                <div>
+                    <strong>Coca-cola</strong>
+                    <div class="description">normal / zero</div>
+                </div>
+                <div>€1,50</div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Fanta</strong>
+                    <div class="description">laranja / ananás</div>
+                </div>
+                <div>€1,50</div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>7up</strong>
+                    <div class="description"></div>
+                </div>
+                <div>€1,50 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Ice Tea</strong>
+                    <div class="description">Limão / Manga / Pêssego</div>
+                </div>
+                <div>€1,50 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Compal</strong>
+                    <div class="description">laranja / pêssego / tuti fruti / pêra / manga / f.vermelhos / ananás</div>
+                </div>
+                <div>€1,40 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Santal</strong>
+                    <div class="description">maça / laranja cenoura</div>
+                </div>
+                <div>€1,40 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Monster</strong>
+                    <div class="description">energy / mango loco / </div>
+                </div>
+                <div>€2,20 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Pedras</strong>
+                    <div class="description">limão / f.vermelhos / maracuja / tangerina</div>
+                </div>
+                <div>€1,10 / €1,30 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Água castelo</strong>
+                    <div class="description"></div>
+                </div>
+                <div>€1,10 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Água </strong>
+                    <div class="description">50cl</div>
+                </div>
+                <div>€1,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Luso</strong>
+                    <div class="description">limão / f.vermelhos</div>
+                </div>
+                <div>€1,20 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Pleno</strong>
+                    <div class="description">chá verde</div>
+                </div>
+                <div>€1,30 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Água Tónica</strong>
+                    <div class="description">Ginger ale / ginger beer</div>
+                </div>
+                <div>€1,50 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Pneu</strong>
+                    <div class="description">água com gas / limão / açucar</div>
+                </div>
+                <div>€1,30 </div>
+            </div>
+        </div>
+        <div class="category">
+            <h2>Aperitivos e Digestivos</h2>
+            <div class="item">
+                <div>
+                    <strong>CRF</strong>
+                    <div class="description">6cl</div>
+                </div>
+                <div>€3,00</div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Ponte De Marante</strong>
+                    <div class="description">6cl</div>
+                </div>
+                <div>€2,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Macieira</strong>
+                    <div class="description">6cl</div>
+                </div>
+                <div>€2,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Grants</strong>
+                    <div class="description">6cl</div>
+                </div>
+                <div>€3,50 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Jameson</strong>
+                    <div class="description">6cl</div>
+                </div>
+                <div>€3,50 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Jack Daniels</strong>
+                    <div class="description">6cl / Mel / Fire / Maça</div>
+                </div>
+                <div>€5,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Vodka</strong>
+                    <div class="description">6cl</div>
+                </div>
+                <div>€4,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Martini</strong>
+                    <div class="description">6cl</div>
+                </div>
+                <div>€1,70 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Favaios</strong>
+                    <div class="description">6cl</div>
+                </div>
+                <div>€1,70 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Licor Beirão</strong>
+                    <div class="description">6cl</div>
+                </div>
+                <div>€3,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Baileys</strong>
+                    <div class="description">6cl</div>
+                </div>
+                <div>€4,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Pisang Ambom</strong>
+                    <div class="description">6cl</div>
+                </div>
+                <div>€3,50 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Ricard</strong>
+                    <div class="description">3cl</div>
+                </div>
+                <div>€2,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Porto</strong>
+                    <div class="description">6cl</div>
+                </div>
+                <div>€1,50 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Porto Tónico</strong>
+                    <div class="description">6cl / Água Tónica</div>
+                </div>
+                <div>€3,00 </div>
+            </div>
+            <div class="item">
+                <div>
+                    <strong>Amêndoa Amarga</strong>
+                    <div class="description">6cl</div>
+                </div>
+                <div>€2,00 </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
