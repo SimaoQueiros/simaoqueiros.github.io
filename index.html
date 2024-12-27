@@ -53,10 +53,31 @@
             background-color: rgba(231, 237, 243, 0.9); /* Adjust opacity here */
             z-index: -1;
         }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px; /* Ajuste o tamanho aqui */
+            height: 100px; /* Ajuste o tamanho aqui */
+            border-radius: 50%; /* Faz a imagem ficar redonda */
+            overflow: hidden; /* Garante que os cantos fiquem cortados */
+        }
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ajusta o conteúdo dentro do círculo */
+        }
     </style>
 </head>
 <body>
     <div class="menu">
+        <div class="logo">
+            <img src="/Users/simao/Downloads/love.png" alt="Logo Love Story">
+        </div>
         <h1>Menu</h1>
 
         <div class="category">
@@ -630,7 +651,7 @@
             <div class="item">
                 <div>
                     <strong>Torrada</strong>
-                    <div class="description">manteiga / nutella</div>
+                    <div class="description"></div>
                 </div>
                 <div>€1,20</div>
             </div>
@@ -707,7 +728,7 @@
             </div>
             <div class="item">
                 <div>
-                    <strong>Tábua de Queijo</strong>
+                    <strong>Tábua de Queijos</strong>
                     <div class="description">3 queijos</div>
                 </div>
                 <div>€8,00</div>
@@ -715,6 +736,7 @@
             </div>
 
         </div>
+    </div>
 
 
 </body>
